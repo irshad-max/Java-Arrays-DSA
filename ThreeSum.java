@@ -21,9 +21,7 @@ class ThreeSum {
                     System.out.println(
                         arr[i] + " + " + arr[left] + " + " + arr[right]
                     +"="+target);
-
-                    left++;
-                    right--;
+                    return;
                 }
                 else if (sum < target) {
                     left++;
