@@ -21,7 +21,7 @@ public class NextPermutation {
                 j--;
             }
 
-            // Swap
+            
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
