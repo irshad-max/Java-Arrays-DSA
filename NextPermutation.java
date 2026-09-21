@@ -5,15 +5,11 @@ public class NextPermutation {
 
         int arr[] = {1, 3, 5, 4, 2};
         int n = arr.length;
-
-        // Step 1: Find breakpoint
         int i = n - 2;
 
         while (i >= 0 && arr[i] >= arr[i + 1]) {
             i--;
         }
-
-        // Step 2: Find element just greater than arr[i]
         if (i >= 0) {
             int j = n - 1;
 
@@ -26,8 +22,6 @@ public class NextPermutation {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-
-        // Step 3: Reverse the part after breakpoint
         int left = i + 1;
         int right = n - 1;
 
