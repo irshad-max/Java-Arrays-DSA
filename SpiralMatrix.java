@@ -24,7 +24,7 @@ public class Main {
 
             top++;
 
-            // 2. Top to Bottom
+            // 2. Topp to Bottom
             for (int i = top; i <= bottom; i++) {
                 System.out.print(matrix[i][right] + " ");
             }
